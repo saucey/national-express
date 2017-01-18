@@ -22,7 +22,7 @@ npm install
 ```
 Run application:
 ```
-npm run dev -- install
+npm run dev
 ```
 
 ### Implementation
