@@ -1,0 +1,8 @@
+.list-search__input {
+	border-radius: 0;
+}
+
+.list-search__button {
+	@extend .global-search__button;
+	padding: 6px 12px;
+}

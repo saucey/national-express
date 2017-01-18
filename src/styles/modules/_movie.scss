@@ -1,0 +1,66 @@
+.movies {
+	margin-bottom: 2em;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 10px;
+	display: block;
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+		p {
+			color: black;
+		}
+	}
+
+	p {
+		margin: 10px 0 0 0;
+		color: #ccc;
+		transition: all .5s ease;
+		span {
+			display: block;
+			font-size: .8em;
+		}
+		font-size: 1.2em;
+	}
+}
+
+.movie {
+	p {
+		margin-bottom: 10px;
+		span {
+			color: #ccc;
+			margin-right: 10px;
+			display: block;
+			font-weight: bold;
+		}
+	}
+}
+
+.movie__poster {
+	@extend .img-responsive;
+	margin-bottom: 10px;
+}
+
+.movie__poster-holder {
+	height: 150px;
+	overflow: hidden;
+}
+
+.moive__side-bar {
+	border: 1px solid #ccc;
+	padding: 20px;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding-left: 0;
+		li {
+			margin-bottom: 10px;
+			span {
+				display: inline-block;
+				margin-right: 10px;
+				color: #ccc;
+				font-weight: bold;
+			}
+		}
+	}
+}

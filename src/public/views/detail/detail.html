@@ -1,0 +1,42 @@
+<div class="container detail">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="row">
+				<div class="col-lg-1 col-sm-2">
+					<h1><a ui-sref="list">OMDb</a></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container movie">
+	<div class="loader" ng-if="!movie.Title">Loading...</div>
+	<div class="row" ng-if="movie.Title">
+		<div class="col-sm-3">
+			<img class="img-responsive" src="{{movie.Poster == 'N/A' ? 'http://placehold.it/800x1000' : movie.Poster }}" alt="">
+		</div>
+		<div class="col-sm-6">
+			<h2>{{movie.Title}}</h2>
+			<p><span>Plot:</span>{{movie.Plot}}</p>
+			<p><span>Actor:</span>{{movie.Actors}}</p>
+			<p><span>Awards:</span>{{movie.Awards}}</p>
+			<p><span>Writer:</span>{{movie.Writer}}</p>
+		</div>
+		<div class="col-sm-3">
+			<div class="moive__side-bar">
+				<ul>
+					<li><span>Director:</span>{{movie.Director}}</li>
+					<li><span>Ratings:</span>{{movie.imdbRating}} / 10</li>
+					<li><span>Released:</span>{{movie.Released}}</li>
+					<li><span>Country:</span>{{movie.Country}}</li>
+					<li><span>Year:</span>{{movie.Year}}</li>
+					<li><span>Language:</span>{{movie.Language}}</li>
+					<li><span>Genre:</span>{{movie.Genre}}</li>
+					<li><span>Type:</span>{{movie.Type}}</li>
+					<li><span>Runtime:</span>{{movie.Runtime}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
